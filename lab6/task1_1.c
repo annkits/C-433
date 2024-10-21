@@ -2,7 +2,7 @@
 
 #include <stdlib.h>
 
-#define N 5
+#define N 6
 
 // заполняем массив рандомными числами
 
