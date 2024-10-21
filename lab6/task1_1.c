@@ -21,11 +21,11 @@ void print_array(int a, int array[a]){
     printf("\n");
 }
 
-// выводим максимальное значение массива
+// выводим максимальное реальное значение массива
 
 void maximum(int arr[N]){
     int d = arr[0];
-    for (int j = 1; j < N; j++){
+    for (int j = 0; j < N; j = j + 2){
         if (d < arr[j]){
             d = arr[j];
         }
@@ -33,11 +33,11 @@ void maximum(int arr[N]){
     printf("%d\n", d);
 }
 
-// выводим количество значений массива, которые меньше нуля
+// выводим количество мнимых значений массива, которые меньше нуля
 
 void minus(int arr[N]){
     int cnt = 0;
-    for (int j = 0; j < N; j++){
+    for (int j = 1; j < N; j = j + 2){
         if (arr[j] < 0){
             cnt += 1;
         }
