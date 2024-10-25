@@ -2,6 +2,8 @@
 
 #include <stdlib.h>
 
+#include <time.h>
+
 #define N 6
 
 // заполняем массив рандомными числами
@@ -63,6 +65,7 @@ int main(){
     int b[N];
     int c[N];
 
+    srand(time(NULL));
     rand_array(a);  
     rand_array(b);  
 
